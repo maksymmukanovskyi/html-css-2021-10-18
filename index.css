@@ -1,0 +1,33 @@
+.header{
+    background-color: green;
+}
+.list{
+text-align: justify;
+width: 90%;
+background: #cacaca;
+list-style: none;
+margin: auto;
+text-transform: uppercase;
+padding: 0;
+}
+
+.list:after {
+    content: '';
+    width: 100%; /* Ensures there are at least 2 lines of text, so justification works */
+    display: inline-block;
+  }
+
+
+.list > li{
+display: inline-block;
+background-color: greenyellow;
+};
+
+.list a:link {
+    color: green;
+  }
+  
+.list a:hover {
+    color: rgb(233, 233, 233);
+  }
+  
