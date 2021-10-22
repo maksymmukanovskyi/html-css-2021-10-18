@@ -18,9 +18,13 @@ nav, .list {
 }
 nav{
   /* margin-top: 2%; */
-  margin: 20px;
+  margin: 10px;
   text-transform: uppercase;
 
+
+}
+nav a{
+  font-size: 25px;
 
 }
 .list{
@@ -44,5 +48,23 @@ nav{
 }
 .list li:hover a{
   color: rgb(238, 238, 238);
+}
+/* ........................CARD CONTAINERS................................ */
+.card-container{
+  margin: auto;
+display: block;
+width: 90%;
+}
+.card-container li{
+  display: inline-block;
+  width: 21%;
+  margin: 1.8%;
+}
+.card{
+  background-color: rgb(240, 156, 156);
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
