@@ -50,6 +50,14 @@ nav a{
   color: rgb(238, 238, 238);
 }
 /* ........................CARD CONTAINERS................................ */
+
+body{
+  counter-reset:count-card 1;
+}
+.card{
+  counter-increment: count-card;
+}
+
 .card-container{
   margin: auto;
 display: block;
@@ -60,6 +68,17 @@ width: 90%;
   width: 21%;
   margin: 1.8%;
 }
+.card-container li:before{
+  text-align: center;
+    display: block;
+    width: 90px;
+position: relative;
+left: -40px;
+bottom: -40px;
+    content: counter(count-card, upper-roman);
+    font-size: 36px;
+    background-color: grey;
+  }
 .card{
   background-color: rgb(240, 156, 156);
 }
