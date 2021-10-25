@@ -1,7 +1,29 @@
 body {
     font-family: 'Playfair Display', serif;
     font-size: 14px;
-    background-color: rgb(236, 236, 236);
+    color: rgb(255, 255, 255);
+    background-image: url(./img/acts-background-site.jpg);
+    background-size: cover;
+
+  }
+  
+  h1{
+    color: rgb(95, 95, 95);
+    text-transform:uppercase;
+    text-align: center;
+    margin: auto;
+    width: max-content;
+  }
+
+  h1:hover::after{
+    display: block;
+    width: 22%;
+    height: 5px;
+    background-color: rgb(255, 0, 0);
+    content: "";
+    position: absolute;
+    /* left: 47%; */
+    margin: 0 auto;
   }
 
 ul, a{
@@ -25,7 +47,12 @@ nav{
 }
 nav a{
   font-size: 25px;
+  transition: 0.5s;
+  font-weight: 700;
 
+}
+nav a:hover{
+  color: rgb(255, 0, 0);
 }
 .list{
   float:right;
@@ -42,12 +69,12 @@ nav a{
 
 }
 .list li:hover{
-  background-color: rgb(189, 189, 189);
+  background-color: rgb(95, 95, 95);
   color: rgb(238, 238, 238);
   
 }
 .list li:hover a{
-  color: rgb(238, 238, 238);
+  color: rgb(255, 0, 0);
 }
 /* ........................CARD CONTAINERS................................ */
 
@@ -67,23 +94,64 @@ width: 90%;
   display: inline-block;
   width: 21%;
   margin: 1.8%;
+  transition: transform .4s; 
 }
+
+.card-container li:hover p:nth-child(2){
+background: rgba(41, 11, 11, 0.575);
+}
+.card-container li:hover p:nth-child(3){
+  background: rgba(121, 33, 33, 0.575);
+  }
+
+  .card-container li:hover{
+    transform: scale(1.3);
+  transform-origin: 50% 50%;
+    }
 .card-container li:before{
+  color: rgb(255, 0, 0);
   text-align: center;
     display: block;
-    width: 90px;
-position: relative;
-left: -40px;
-bottom: -40px;
+    width: 24px;
+    position: relative;
+    left: 0px;
+    bottom: 0px;
     content: counter(count-card, upper-roman);
-    font-size: 36px;
-    background-color: grey;
+    font-size: 12px;
+    background-color: rgb(235, 235, 235);
+    opacity: 0.6;
   }
 .card{
   background-color: rgb(240, 156, 156);
+  
 }
 img {
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  margin-bottom: 0;
+  float: left;
+}
+
+/* ..........................CARDS......................... */
+
+.card p{
+  margin: 0px;
+  display: inline-block;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  float: left;
+  height: 30px;
+text-align: center;
+vertical-align: middle;
+line-height: 28px;
+text-transform: uppercase;
+color: rgb(255, 255, 255);
+}
+.card p:nth-child(2){
+  background-color: rgb(34, 30, 30);
+  width: 70%;
+}
+.card p:nth-child(3){
+  background-color: rgb(156, 156, 156);
+  width: 30%;
 }
 
