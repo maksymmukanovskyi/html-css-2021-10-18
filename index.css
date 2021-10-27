@@ -142,6 +142,52 @@ header{
 } */
 
 
+
+/* <div class="slidebox">
+            <button class="prev"></button>
+            <p class="innertext">12121</p>
+            <button class="next"></button>
+        </div> */
+
+.slidebox{
+  width: 100%;
+  background-color: rgb(128, 81, 81);
+  margin: auto;
+  position: relative;
+  height: 48px;
+}        
+.prev{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  position: absolute;
+  left: 0;
+}
+.next{
+  top: 0;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  position: absolute;
+  right:0;
+}
+.innertext{
+  text-align: center;
+  justify-content: center;
+  font-size: 16px;
+
+}
+
 /* +++++++++++++++++++++++ */
 
 h1{
@@ -193,6 +239,7 @@ color: rgb(255, 0, 0);
 }
 .list{
 float:right;
+padding-right: 5%;
 }
 .list li{
   float:left;
