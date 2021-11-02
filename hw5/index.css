@@ -1,23 +1,18 @@
 * {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   padding: 0;
   margin: 0;
 }
 
-body {
-  /* z-index: 100; */
-  /* overflow: auto; */
+/* body {
   font-family: 'Playfair Display', serif;
   font-size: 14px;
   color: rgb(255, 255, 255);
   background-size: cover;
-  background-color: rgb(119, 93, 93);
   display: block;
   margin: auto;
   min-height: 200vh;
-  
-  
-}
+} */
 header{
   position:fixed;
   z-index: 50;
@@ -64,40 +59,58 @@ header{
 }
 /* ..............................hw5....................... */
 
-.content{
-  /* position: absolute; */
-  /* margin-top: 65px; */
-  position: relative;
-  width: 100%;
-  height: 100%;
+.wrapper{
+  height: 100vh;
   overflow-x: hidden;
-  overflow-y: scroll;
-  perspective: 8px;
-  perspective-origin: 0%;
+  perspective: 2px;
+}
+.section { 
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 0 0 5px #000;
+}
+.parallax::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(1.5);
+  background-size: 100%;
+  z-index: -1;
+}
+.tours, .collection{
+  background-color: rgba(0, 0, 0, 0.589);
+}
+.bg1::after {
+  background-image: url('./img/slide4.jpg');
 }
 
-.background {
-  position: absolute;
-  top: 53px;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform: translateZ(0px);
+.bg2::after {
+  background-image: url('./img/slide4.jpg');
 }
-.tours{
+
+
+
+/* .tours{
   margin-top: auto;
   margin-bottom: 50px;
   position:relative;
   transform-origin: 0;
   transform: translateZ(3px) scale(0.625);
-}
-.collection{
+} */
+/* .collection{
   margin-top: 500px;
   margin-bottom: 50px;
   position:relative;
   transform-origin: 500px;
   transform: translateZ(3px) scale(0.625);
-}
+} */
 
 
 .slidebox{
