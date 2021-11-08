@@ -1,11 +1,13 @@
 
 let text = document.querySelector('.innertext');
 let backgroundImage = document.querySelector('.imageView');
+let prevButton = document.querySelector('.prev');
+let nextButton = document.querySelector('.next');
 
-document.querySelector('.prev').addEventListener("click", onPrev);
-document.querySelector('.next').addEventListener("click", onNext);
+prevButton.addEventListener("click", onPrev);
+nextButton.addEventListener("click", onNext);
 
-
+console.log(prevButton.style.color)
 
 
 let data = [
@@ -25,16 +27,26 @@ function onNext(){
 
     text.textContent = data[0][currentIndex];
     backgroundImage.src = data[1][currentIndex];
+    nextButton.style.color = "white";
+    prevButton.style.color = "white";
 
+    if(currentIndex>data[0].length-2){
+        nextButton.style.color = "rgb(40, 40, 40)";
     }
-    return;
-}
+    }return;
+};
+
+
 function onPrev(){
     if(currentIndex>0){
         currentIndex = currentIndex-1;
         text.textContent = data[0][currentIndex];
     backgroundImage.src = data[1][currentIndex];
-    }
-    return;
+    prevButton.style.color = "white";
+    nextButton.style.color = "white";
 
-}
+    if(currentIndex==0){
+        prevButton.style.color = "rgb(40, 40, 40)";
+    }
+    }return;
+};
