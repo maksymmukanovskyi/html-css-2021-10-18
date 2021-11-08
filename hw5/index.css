@@ -1,305 +1,371 @@
+html, body {
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    overflow: hidden;
+}
 * {
-  /* box-sizing: border-box; */
-  padding: 0;
-  margin: 0;
-}
+    /* box-sizing: border-box; */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .body {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    background-size: cover;
+    display: block;
+    margin: auto;
+    min-height: 200vh;
+  }
+  header{
+    position:fixed;
+    z-index: 50;
+    background-color: rgb(10, 10, 10);
+    width: 100%;
+  }
+  
+  .list-item {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .list-item > a,
+  .sublist-item > a {
+    display: inline-block;
+  }
+  
+  .list-item > a:hover,
+  .sublist-item > a:hover{
+  
+    color: #ffffff;
+  }
+  
+  
+  .sublist {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    background-color: rgba(255, 255, 255, 0.212);
+  
+    /* box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.3); */
+  }
+  
+  .list-item:hover > .sublist {
+    display: block;
+    opacity: 0.8;
+  
+  }
+  
+  .sublist-item {
+    white-space: nowrap;
+  }
 
-/* body {
-  font-family: 'Playfair Display', serif;
-  font-size: 14px;
-  color: rgb(255, 255, 255);
-  background-size: cover;
-  display: block;
-  margin: auto;
-  min-height: 200vh;
-} */
-header{
-  position:fixed;
-  z-index: 50;
-  background-color: rgb(58, 58, 58);
-  width: 100%;
-}
-
-.list-item {
+main {
   position: relative;
-  display: inline-block;
+
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 1px;
+    -webkit-perspective: 1px;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
 }
 
-.list-item > a,
-.sublist-item > a {
-  display: inline-block;
-}
-
-.list-item > a:hover,
-.sublist-item > a:hover{
-
-  color: #ffffff;
-}
-
-
-.sublist {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  list-style: none;
-  background-color: rgb(58, 58, 58);
-
-  /* box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.3); */
-}
-
-.list-item:hover > .sublist {
-  display: block;
-  opacity: 0.8;
+.parallax__tours {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.89), rgba(255, 255, 255, 0));
 
 }
 
-.sublist-item {
-  white-space: nowrap;
+.parallax__tours:after {
+    background-image: url("./img/SquarespaceCover.2000px.mini-19.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;
+    content: "";
+    transform: translateZ(-2px) scale(3);
+    -webkit-transform: translateZ(-2px) scale(3);
 }
-/* ..............................hw5....................... */
 
-.wrapper{
-  height: 100vh;
-  overflow-x: hidden;
-  perspective: 2px;
+h1 {
+    width: 60%;
+    font-family: "Arial";
+    font-size: 100pt;
+    color: #222;
+    text-align: right;
+    padding: 20vh 175px;
+    margin: 0px;
+    float: right;
 }
-.section { 
+
+.parallax__shopping {
   position: relative;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-shadow: 0 0 5px #000;
+    width: 100%;
+    background-image: url("./img/Tessuti-fashion-campaign-couple-black-jackets-2000px-wide.jpg");
+    height: 100vh;
+    perspective: 2px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-perspective: 2px;
 }
-.parallax::after {
-  content: " ";
+.parallax__shopping:after {
+  background: linear-gradient(360deg, rgba(255, 255, 255, 0.89) 10%, rgba(255, 255, 255, 0) 90%);
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transform: translateZ(-1px) scale(1.5);
-  background-size: 100%;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
   z-index: -1;
+  content: "";
 }
-.tours, .collection{
-  background-color: rgba(0, 0, 0, 0.589);
-}
-.bg1::after {
-  background-image: url('./img/slide4.jpg');
-}
-
-.bg2::after {
-  background-image: url('./img/slide4.jpg');
-}
-
-
-
-/* .tours{
-  margin-top: auto;
-  margin-bottom: 50px;
-  position:relative;
-  transform-origin: 0;
-  transform: translateZ(3px) scale(0.625);
-} */
-/* .collection{
-  margin-top: 500px;
-  margin-bottom: 50px;
-  position:relative;
-  transform-origin: 500px;
-  transform: translateZ(3px) scale(0.625);
-} */
 
 
 .slidebox{
-  width: 100%;
-  background-color: rgb(128, 81, 81);
-  margin: auto;
-  position: relative;
-  height: 48px;
-}        
-.prev{
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  position: absolute;
-  left: 0;
-}
-.next{
-  top: 0;
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  position: absolute;
-  right:0;
-}
-.innertext{
-  text-align: center;
-  justify-content: center;
-  font-size: 24px;
-  text-transform: uppercase;
+  /* z-index: 100; */
+    width: 75%;
+    background-color: rgb(128, 81, 81);
+    /* margin: auto; */
+    position: relative;
+    top: -50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+    height: 48px;
+    transform: translateZ(-1px) scale(2);
+    -webkit-transform: translateZ(-1px) scale(2);
+  } 
 
-}
-
-/* +++++++++++++++++++++++ */
-
-h1{
-  color: rgb(95, 95, 95);
-  text-transform:uppercase;
-  text-align: center;
-  margin: auto;
-  width: max-content;
-}
-
-h1:hover::after{
-  display: block;
-  width: 22%;
-  height: 5px;
-  background-color: rgb(255, 0, 0);
-  content: "";
-  position: absolute;
-  /* left: 47%; */
-  margin: 0 auto;
-}
-
-ul, a{
-  list-style-type: none;
-margin: 0;
-padding: 0;
-font-size: 15px;
-  text-decoration: none;
-  color: rgb(95, 95, 95);
-}
-
-nav, .list {
-display: inline-block;
-}
-nav{
-/* margin-top: 2%; */
-margin: 10px;
-text-transform: uppercase;
-
-
-}
-nav a{
-font-size: 25px;
-transition: 0.5s;
-font-weight: 700;
-
-}
-nav a:hover{
-color: rgb(255, 0, 0);
-}
-.list{
-float:right;
-padding-right: 5%;
-}
-.list li{
-  float:left;
-  margin: 10px;
-  border: 1px solid;
-  border-color: rgb(149, 149, 149);
-  border-radius: 9px;
-  padding: 5px;
-  text-transform: uppercase;
-  transition: 0.5s;
-}
-.list li:hover{
-background-color: rgb(95, 95, 95);
-color: rgb(238, 238, 238);
-
-}
-.list li:hover a{
-color: rgb(255, 0, 0);
-}
-/* ........................CARD CONTAINERS................................ */
-
-body{
-counter-reset:count-card 1;
-}
-.card{
-counter-increment: count-card;
-}
-
-.card-container{
-margin: auto;
-display: block;
-width: 90%;
-}
-.card-container li{
-display: inline-block;
-width: 21%;
-margin: 1.8%;
-transition: transform .4s; 
-}
-
-.card-container li:hover p:nth-child(2){
-background: rgba(41, 11, 11, 0.575);
-}
-.card-container li:hover p:nth-child(3){
-background: rgba(121, 33, 33, 0.575);
-}
-
-.card-container li:hover{
-  transform: scale(1.3);
-transform-origin: 50% 50%;
+  .imageView{
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position:absolute;
+    object-fit: cover;
+    width: 60vw;
+    height: 60vh;
+    border-radius: 35%;
   }
-.card-container li:before{
-color: rgb(255, 0, 0);
-text-align: center;
+   
+  
+  .prev{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: absolute;
+    left: 0;
+  }
+  .next{
+    top: 0;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: absolute;
+    right:0;
+  }
+  .innertext{
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    font-size: 24px;
+    text-transform: uppercase;
+  
+  }
+  
+  /* +++++++++++++++++++++++ */
+  
+  h1{
+    color: rgb(95, 95, 95);
+    text-transform:uppercase;
+    text-align: center;
+    margin: auto;
+    width: max-content;
+  }
+  
+  h1:hover::after{
+    display: block;
+    width: 22%;
+    height: 5px;
+    background-color: rgb(255, 0, 0);
+    content: "";
+    position: absolute;
+    /* left: 47%; */
+    margin: 0 auto;
+  }
+  
+  ul, a{
+    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+    text-decoration: none;
+    color: rgb(95, 95, 95);
+  }
+  
+  nav, .list {
+  display: inline-block;
+  }
+  nav{
+  /* margin-top: 2%; */
+  margin: 10px;
+  text-transform: uppercase;
+  
+  
+  }
+  nav a{
+  font-size: 25px;
+  transition: 0.5s;
+  font-weight: 700;
+  
+  }
+  nav a:hover{
+  color: rgb(255, 0, 0);
+  }
+  .list{
+  float:right;
+  padding-right: 5%;
+  }
+  .list li{
+    float:left;
+    margin: 10px;
+    border: 1px solid;
+    border-color: rgb(149, 149, 149);
+    border-radius: 9px;
+    padding: 5px;
+    text-transform: uppercase;
+    transition: 0.5s;
+  }
+  .list li:hover{
+  background-color: rgb(95, 95, 95);
+  color: rgb(238, 238, 238);
+  
+  }
+  .list li:hover a{
+  color: rgb(255, 0, 0);
+  }
+  /* ........................CARD CONTAINERS................................ */
+  
+  body{
+  counter-reset:count-card 1;
+  }
+  .card{
+  counter-increment: count-card;
+  }
+  
+  .card-container{
+  margin: auto;
   display: block;
-  width: 24px;
-  position: relative;
-  left: 0px;
-  bottom: 0px;
-  content: counter(count-card, upper-roman);
-  font-size: 12px;
-  background-color: rgb(235, 235, 235);
-  opacity: 0.6;
-}
-.card{
-background-color: rgb(240, 156, 156);
+  width: 90%;
+  }
+  .card-container li{
+  display: inline-block;
+  width: 21%;
+  margin: 1.8%;
+  transition: transform .4s; 
+  }
+  
+  .card-container li:hover p:nth-child(2){
+  background: rgba(41, 11, 11, 0.575);
+  }
+  .card-container li:hover p:nth-child(3){
+  background: rgba(121, 33, 33, 0.575);
+  }
+  
+  .card-container li:hover{
+    transform: scale(1.3);
+  transform-origin: 50% 50%;
+    }
+  .card-container li:before{
+  color: rgb(255, 0, 0);
+  text-align: center;
+    display: block;
+    width: 24px;
+    position: relative;
+    left: 0px;
+    bottom: 0px;
+    content: counter(count-card, upper-roman);
+    font-size: 12px;
+    background-color: rgb(235, 235, 235);
+    opacity: 0.6;
+  }
+  .card{
+  background-color: rgb(240, 156, 156);
+  
+  }
+  img {
+  width: 100%;
+  margin-bottom: 0;
+  float: left;
+  }
+  
+  /* ..........................CARDS......................... */
+  
+  .card p{
+  margin: 0px;
+  display: inline-block;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  float: left;
+  height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  }
+  .card p:nth-child(2){
+  background-color: rgb(34, 30, 30);
+  width: 70%;
+  }
+  .card p:nth-child(3){
+  background-color: rgb(156, 156, 156);
+  width: 30%;
+  }
 
-}
-img {
-width: 100%;
-margin-bottom: 0;
-float: left;
-}
 
-/* ..........................CARDS......................... */
 
-.card p{
-margin: 0px;
-display: inline-block;
-margin-block-end: 0px;
-margin-block-start: 0px;
-float: left;
-height: 30px;
-text-align: center;
-vertical-align: middle;
-line-height: 28px;
-text-transform: uppercase;
-color: rgb(255, 255, 255);
-}
-.card p:nth-child(2){
-background-color: rgb(34, 30, 30);
-width: 70%;
-}
-.card p:nth-child(3){
-background-color: rgb(156, 156, 156);
-width: 30%;
-}
+  /* **************footer***************************************** */
 
+  .footer-end{
+    padding: 0 5% 0 5%;
+    color: #868686;
+    position: absolute;
+    display: block;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+  }
+  .footer-end p{
+    text-align: center;
+    display: inline-block;
+    width: 45%;
+  }
