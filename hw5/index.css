@@ -87,6 +87,9 @@ html {
     width: 45%;
   }
 
+
+  
+
 main {
   position: relative;
 
@@ -126,16 +129,7 @@ main {
     -webkit-transform: translateZ(-2px) scale(3);
 }
 
-h1 {
-    width: 60%;
-    font-family: "Arial";
-    font-size: 100pt;
-    color: #222;
-    text-align: right;
-    padding: 20vh 175px;
-    margin: 0px;
-    float: right;
-}
+
 
 .parallax__shopping {
   position: relative;
@@ -156,7 +150,13 @@ h1 {
   right: 0px;
   bottom: 0px;
   z-index: -1;
-  content: "";
+  content: "new collection";
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Arial";
+  font-size: 9vh;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.623);
 }
 
 
@@ -241,24 +241,37 @@ h1 {
   
   /* +++++++++++++++++++++++ */
   
-  h1{
-    color: rgb(95, 95, 95);
+  .head__tours{
+    display: block;
     text-transform:uppercase;
     text-align: center;
     margin: auto;
     width: max-content;
-  }
-  
-  h1:hover::after{
-    display: block;
-    width: 22%;
-    height: 5px;
-    background-color: rgb(255, 0, 0);
-    content: "";
+z-index: 100;
+    width: 50%;
+    margin: auto;
     position: absolute;
-    /* left: 47%; */
-    margin: 0 auto;
+    top: 55%;
+  left: -47%;
+  transform: translate(-50%, -50%);
+  transform: rotate(-90deg);
+    /* transform: translateZ(-1px) scale(1);
+    -webkit-transform: translateZ(-1px) scale(1); */
+    -webkit-transform: rotate(-90deg);
+    font-family: "Arial";
+    font-size: 12vh;
+    color: rgb(255, 255, 255);
+    text-align: right;
+    padding: 1vh 0 0 1vh;
+    margin: -4vw;
+  };
+
+  h1{
+    display: block;
   }
+
+  
+  
   
   ul, a{
     list-style-type: none;
