@@ -1,0 +1,103 @@
+
+    /*********ICON LINKS***********/
+    .icon{
+        /* float: left; */
+        cursor: pointer;
+        display: inline-block;
+        margin: 50% 4% 0% 5%;
+        background-color: #525252;
+        width: 21%;
+        height: 13%;
+        border: 2px solid rgba(255, 255, 255, 0.87);
+    }
+    .icon:nth-of-type(3){
+    margin-right: 0;
+    }
+    .pe-7s-like:hover, .pe-7s-shuffle:hover,.pe-7s-clock:hover, .add-button:hover{
+        color: #ff0000;
+        border: 2px solid rgba(255, 0, 0, 0.87);
+
+    }
+    .add-button:hover .pe-7s-cart{
+        color: #ff0000;
+
+     }
+    .add-button{
+    cursor: pointer;
+    display: block;
+    color: #fff;
+    margin:15% auto;
+    position: relative;
+    width: 90%;
+    height: 13%;
+    background-color: #525252;
+    border:2px solid rgba(255, 255, 255, 0.87);
+    }
+
+    .btn-act{
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height:50px;
+    padding: 0 0 0 30px;
+    }
+    .pe-7s-cart{
+    display: inline-block;
+    margin-right: 30px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    transform:translate(-50%,-50%);
+    font-weight: 400;
+    font-size: 35px;
+    line-height:48px;
+    color: #fff;
+    }
+    .pe-7s-like{
+    display: inline-block;
+    font-weight: 400;
+    font-size: 40px;
+    line-height:48px;
+    color: #fff;
+    }
+    .pe-7s-shuffle{
+    display: inline-block;
+    font-weight: 400;
+    font-size: 40px;
+    line-height:48px;
+    color: #fff;
+    }
+    .pe-7s-clock{
+    display: inline-block;
+    font-weight: 400;
+    font-size: 40px;
+    line-height:48px;
+    color: #fff;
+    }
+    .featured-button{
+    cursor: pointer;
+    font-size: 18px;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    }
+    .button-name{
+    float: left;
+    width: 75%;
+    padding: 10px 0;
+    background-color: #555252;
+    }
+    .price{
+    float: right;
+    width: 25%;
+    background-color: #8c8c8c;
+    padding: 10px 0;
+    }
+    .collection-member:hover .button-name{
+    color: #aa0000;
+    }
+    .collection-member:hover .price{
+        color: #aa0000;
+    }
+
+   
