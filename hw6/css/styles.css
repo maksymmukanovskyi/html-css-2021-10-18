@@ -1,0 +1,20 @@
+@import'reset.css';
+@import'header.css';
+@import'main-section.css';
+@import'secondary-section';
+@import'footer.css';
+
+
+/* **********google fonts*********************** */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800');
+
+/*** font-family: 'Montserrat', sans-serif;  ***/
+
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+
+/*******font-family: 'Kaushan Script', cursive;******/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,700');
+
+/********font-family: 'Roboto', sans-serif;***********/
