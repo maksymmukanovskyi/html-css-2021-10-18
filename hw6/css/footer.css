@@ -1,0 +1,47 @@
+.footer-section{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.copy{
+    align-self: center;
+    font-size: 0.875rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #333333;
+}
+.span{
+    color: crimson;
+}
+
+.form{
+    display: flex;
+    flex-basis: 45%;
+    justify-content: center;
+
+}
+
+
+.email{
+    flex-basis: 65%;
+    padding-left: 0.9375rem;
+    font-size: 1.125rem;
+    color: #999999;
+    display: inline-block;
+    border: 0.0625rem solid #ccc;
+}
+.button{
+    flex-basis: 35%;
+    background-color: #95e1d3;
+    border: none;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 0.875rem;
+    cursor: pointer;
+    text-transform: uppercase;
+}

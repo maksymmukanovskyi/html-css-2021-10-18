@@ -1,0 +1,139 @@
+.secondary-section{
+    width: 100%;
+    margin-bottom: 4.8rem;
+    text-align: center;
+}
+.card{
+    position: relative;
+}
+
+.description{
+    font-size: 0.9375rem;
+    font-family: 'Roboto', sans-serif;
+    color: #999999;
+    transition: 1s;
+    cursor: pointer;
+    margin-bottom: 2.8rem;
+
+}
+
+.secondary-frame{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    height: 30%;
+}
+
+.secondary-item{
+    flex-basis: 30%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.picture{
+    width: 100%;
+}
+
+.personal-name{
+    font-size: 0.875rem;
+    max-height: 5.1875rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #333333;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+
+.ocupation{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+    color: #999999;
+    margin-bottom: 1rem;
+}
+
+.overlay{
+position: absolute;
+background-image: linear-gradient(to top, rgba(255, 251, 0, 0.9), rgba(15, 0, 230, 0.9));
+display: flex;
+width: 100%;
+top: 0;
+left: 0;
+height: calc(100% - 3.5rem);
+opacity: 0;
+align-items: center;
+
+}
+
+.card:hover .picture{
+    transform:translate(-5%, -5%);
+    transition: 1s;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
+.card:hover > .overlay{
+    opacity: 1;
+    transition: 1s;
+    transform:translate(-5%, -5%);
+}
+
+
+
+
+.icon-block{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.item-wrapper{
+transition: 1s;
+display: block;
+    flex-basis: 18%;
+    background-color: #fce38abb;
+    padding: 4%;
+    cursor: pointer;
+}
+
+
+.icon-item{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.item-wrapper:hover{
+    background-color: rgb(226, 23, 23);
+}
+
+
+
+
+
+.face{
+    background-image: url(../img/icons/i-1.png);
+   
+
+}
+.twit{
+    background-image: url(../img/icons/i-2.png);
+}
+.insta{
+    background-image: url(../img/icons/i-3.png);
+}
+.pint{
+    background-image: url(../img/icons/i-4.png);
+}
