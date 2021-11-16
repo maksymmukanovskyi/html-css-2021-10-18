@@ -10,3 +10,35 @@ a{
 ul{
     list-style: none;
 }
+
+.wrapper{
+    width: 70%;
+    margin:auto;
+    padding: 3.125rem 0;
+    /*background-color: #f1f1f1;*/
+}
+
+.about{
+    font-size: 1.5rem;
+    color: #333333;
+    font-family: 'Kaushan Script', cursive;
+    margin-bottom: 1rem;
+}
+
+.title{
+    font-size: 1.875rem;
+    color: #333333;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 3.125rem;
+}
+
+.title::after{
+    display: block;
+    content: '';
+    width: 3.75rem;
+    height: 0.1875rem;
+    background-color: #f38181;
+    margin:0.325rem auto 0;
+}
