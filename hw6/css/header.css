@@ -15,7 +15,6 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     border-bottom: 0.0625rem transparent;
-    transition: 1s;
     text-transform: uppercase;
 }
 
@@ -30,7 +29,6 @@
     text-transform: uppercase;
     border-bottom: 0.1875rem solid transparent;
     cursor: pointer;
-    transition: 1s;
 }
 
 .list-item:hover{
@@ -43,18 +41,30 @@
     transition-duration: 1s;
     position: relative;
 }
-.logo:hover::after{
+
+
+.logo::after{
+    opacity: 0;
     display: block;
     position: absolute;
     content: '';
-    width: 9.75rem;
+    width: 11rem;
     height: 0.1875rem;
     background-color: #f38181;
     margin:0.325rem auto 0;
+}
+
+.logo:hover::after{
+    opacity: 1;
+    transition-timing-function: linear;
     transition-duration: 1s;
 }
 
-.list-item:hover::after{
+
+
+
+.list-item::after{
+    opacity: 0;
     display: block;
     position: absolute;
     content: '';
@@ -62,5 +72,10 @@
     height: 0.1875rem;
     background-color: #f38181;
     margin:0.325rem auto 0;
+}
+
+.list-item:hover::after{
     transition-duration: 1s;
+    transition-timing-function: linear;
+    opacity: 1;
 }

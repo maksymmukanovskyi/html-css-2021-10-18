@@ -73,12 +73,14 @@ align-items: center;
 }
 
 .card:hover .picture{
+    transition-timing-function: linear;
     transform:translate(-5%, -5%);
     transition: 1s;
     box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
 }
 .card:hover > .overlay{
     opacity: 1;
+    transition-timing-function: linear;
     transition: 1s;
     transform:translate(-5%, -5%);
 }
@@ -96,6 +98,7 @@ align-items: center;
 
 
 .item-wrapper{
+    transition-timing-function: linear;
 transition: 1s;
 display: block;
     flex-basis: 18%;

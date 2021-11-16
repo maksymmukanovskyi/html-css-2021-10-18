@@ -35,7 +35,6 @@
 display: block;
 width: 2rem;
 height: 2rem;
-transition: 1s;
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
@@ -74,7 +73,6 @@ flex-basis: 80%;
     font-size: 0.875rem;
     color: #8e8e8e;
     text-transform: uppercase;
-    transition: 1s;
     margin-bottom: 1rem;
 }
 .article-description{
@@ -85,10 +83,14 @@ flex-basis: 80%;
     cursor: pointer;
 }
 .main-item:hover > .icon {
+    transition-timing-function: linear;
     transform: scale(1.5);
+    transition: 1s;
 }
 .main-item:hover .capture-title{
+    transition-timing-function: linear;
     transform: scale(1.5);
+    transition: 1s;
 }
 .main-item:hover .article-description{
     color: #494848;
