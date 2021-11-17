@@ -1,0 +1,39 @@
+.collapse {
+    border-collapse: collapse;
+  }
+
+  table{
+    border: 1px solid rgb(66, 66, 66);  
+    margin: auto;
+    text-align: center;
+  }
+  td{
+    border: 1px solid rgb(66, 66, 66); 
+  }
+  td:nth-of-type(2) {
+    border: 1px solid rgb(66, 66, 66); 
+  }
+
+  .wrapper {
+    width: 360px;
+    padding: 0 0 30px;
+    margin: 10px;
+    font-family: 'Bad Script', cursive;
+  }
+
+  h2 {
+    text-align: center;
+    color: #ddd;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  .head{
+      background-color: rgb(58, 58, 58);
+      color: azure;
+  }
+  .row{
+      width: 65%;
+      background-color: rgb(143, 24, 24);
+  }
