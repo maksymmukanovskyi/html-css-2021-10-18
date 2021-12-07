@@ -1,0 +1,230 @@
+.service__list{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    /* background-color: rgb(156, 101, 101); */
+    margin-bottom: 2vh;
+}
+
+.card{
+    flex-basis: 30%;
+}
+
+.subtitle__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1vh;
+}
+
+.icon, .service{
+    display: inline-flex;
+}
+
+
+
+
+/* --------------------form style-------------------------------- */
+
+.main__form{
+    display:flex;
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    position: relative;
+}
+
+
+
+.text-area{
+    flex-basis: 45%;
+    opacity: 0.8;
+    border: 3px solid rgb(93, 93, 93);
+}
+
+.submit-btn{
+    flex-basis: 20%;
+    margin-top: 6vh;
+    font-family: 'Lemonada';
+    background-color: rgb(255, 198, 13); 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  /* display: inline-block; */
+  font-size: 16px;
+}
+
+.person__info{
+    display:flex;
+    flex-flow: column wrap;
+    align-content: center;
+    flex-basis: 50%;
+    justify-content: space-between;
+}
+
+
+.first-line, .second-line, .third-line{
+    width: 80%;
+    border: 3px solid rgb(93, 93, 93);
+    height: 7vh;
+    opacity: 0.8;
+}
+
+.error__email__first{
+    display: none;
+    color: red;
+    font-weight: 700;
+    font-size: 12px;
+    position: absolute;
+    transform: translate(50%, 310%);
+    top: 28;
+    left: -1%;
+}
+
+.error__email__second{
+    display: none;
+    color: red;
+    font-weight: 700;
+    font-size: 12px;
+    position: absolute;
+    transform: translate(50%, 50%);
+    top: 38%;
+    left: -3%;
+}
+
+
+.error__email__third{
+    display: none;
+    color: red;
+    font-weight: 700;
+    font-size: 12px;
+    position: absolute;
+    transform: translate(50%, 50%);
+    top: 61%;
+    left: -3.5%;
+}
+
+.error__email__forth{
+    display: none;
+    color: red;
+    font-weight: 700;
+    font-size: 12px;
+    position: absolute;
+    transform: translate(50%, 50%);
+    top: 60%;
+    left: 48%;
+}
+
+
+
+input[name="email"]:focus, input[name="user-name"]:focus, input[name="subject"]:focus{
+    outline: none;
+  }
+
+  textarea[name="text"]:focus{
+    outline: none;
+    border: 2px solid rgb(255, 16, 16);
+  }
+  textarea[name="text"]:focus ~ .error__email__forth {
+    display: block; 
+  }
+
+  /* ------------------------------------------------------------------------- */
+input[name="user-name"]:not(:focus):not(:placeholder-shown):invalid{
+    border: 2px solid rgb(255, 16, 16);
+}
+
+input[name="email"]:not(:focus):not(:placeholder-shown):invalid {
+    border: 2px solid rgb(255, 16, 16);
+}
+
+input[name="subject"]:not(:focus):not(:placeholder-shown):invalid {
+    border: 2px solid rgb(255, 16, 16);
+}
+
+textarea[name="text"]:not(:focus):not(:placeholder-shown):invalid {
+    border: 2px solid rgb(255, 16, 16);
+}
+
+
+
+/* --------------------------------------------------------------------------------------- */
+
+
+input[name="user-name"]:not(:focus):not(:placeholder-shown):invalid ~ .error__email__first {
+    display: block; 
+  }
+
+  input[name="email"]:not(:focus):not(:placeholder-shown):invalid ~ .error__email__second {
+    display: block; 
+  }
+
+  input[name="subject"]:not(:focus):not(:placeholder-shown):invalid ~ .error__email__third {
+    display: block; 
+  }
+  
+  textarea[name="text"]:not(:focus):invalid ~ .error__email__forth {
+    display: block; 
+  }
+
+
+
+  /* --------------------------------------------------------------------------------- */
+  input[name="user-name"]:not(:focus):not(:placeholder-shown):valid {
+    border-color: rgb(9, 255, 0);
+  }
+
+
+  input[name="email"]:not(:focus):not(:placeholder-shown):valid {
+    border-color: rgb(9, 255, 0);
+  }
+
+
+  input[name="subject"]:not(:focus):not(:placeholder-shown):valid {
+    border-color: rgb(9, 255, 0);
+  }
+
+  textarea[name="text"]:not(:focus):not(:placeholder-shown):valid {
+    border-color: rgb(9, 255, 0);
+  }
+
+/* input[name="user-name"]:invalid, input[name="email"]:invalid,  input[name="subject"]:invalid{
+    
+} */
+
+
+
+/* -----------font styles---------------------------- */
+
+.description__title{
+  font-family: 'Wisdom Script AI';
+    font-weight: 900;
+    text-align: center;
+  font-size: 0.95rem;
+  color:rgb(219, 194, 152);  
+  text-transform: uppercase;
+  margin-bottom: 1.1vh;
+}
+
+.service{
+  font-family: 'Roboto Slab';
+    font-weight: 900;
+    text-align: center;
+  font-size: 0.85rem;
+  color:rgb(255, 198, 13);
+  text-transform: uppercase;
+  margin-bottom: 1.1vh;
+}
+
+.description{
+  font-family: 'Monsterrat-Bold', sans-serif;
+    font-weight: 300;
+    text-align: center;
+  font-size: 0.85rem;
+  color:rgb(182, 182, 182);
+  margin-bottom: 1.1vh;
+}

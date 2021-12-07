@@ -1,0 +1,74 @@
+@import'reset.css';
+@import'header.css';
+@import'main.css';
+@import'footer.css';
+
+
+
+/* montserrat-regular - latin */
+@font-face {
+    font-family: 'Droid Serif Italic V2';
+    font-style: italic;
+    font-weight: 300;
+    src: url('../fonts/Droid-Serif-Italic-V2/Droid-Serif-Italic-V2/Droid-Serif-Italic-V2.woff') format('woff'),
+     url('../fonts/Droid-Serif-Italic-V2/Droid-Serif-Italic-V2/Droid-Serif-Italic-V2.woff2') format('woff2'),
+     url('../fonts/Droid-Serif-Italic-V2/Droid-Serif-Italic-V2/Droid-Serif-Italic-V2.ttf') format('truetype');
+  }
+
+
+  @font-face {
+    font-family: 'Lemonada';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Lemonada/lemonada-v14-latin-regular.woff') format('woff'),
+     url('../fonts/Lemonada/lemonada-v14-latin-regular.woff2') format('woff2'),
+     url('../fonts/Lemonada/lemonada-v14-latin-regular.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Monsterrat-Bold';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/Montserrat-Bold/Montserrat-Bold/Montserrat-Bold.woff') format('woff'),
+     url('../fonts/Montserrat-Bold/Montserrat-Bold/Montserrat-Bold.woff2') format('woff2'),
+     url('../fonts/Montserrat-Bold/Montserrat-Bold/Montserrat-Bold.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 400;
+     src: url('../fonts/Roboto-Slab-Regular/Roboto-Slab-Regular/Roboto-Slab-Regular.woff2') format("woff2"), url('../fonts/Roboto-Slab-Regular/Roboto-Slab-Regular/Roboto-Slab-Regular.woff') format("woff"), url('../fonts/Roboto-Slab-Regular/Roboto-Slab-Regular/Roboto-Slab-Regular.ttf') format("truetype"); 
+    }
+
+
+    @font-face {
+      font-family: "URWWoodTypeW01-D";
+      font-style: normal;
+      font-weight: 700;
+       src: url('../fonts/Wood-Type/Wood-Type.woff2') format("woff2"), url('../fonts/Wood-Type/Wood-Type.woff') format("woff"), url('../fonts/Wood-Type/Wood-Type.ttf') format("truetype"); 
+    }
+
+    @font-face {
+      font-family: "Wisdom Script AI"; 
+      font-style: normal;
+      font-weight: 400;
+      src: url('../fonts/Wisdom-Script-AI/Wisdom-Script-AI/Wisdom-Script-AI.woff2') format("woff2"), url('../fonts/Wisdom-Script-AI/Wisdom-Script-AI/Wisdom-Script-AI.woff') format("woff"), url('../fonts/Wisdom-Script-AI/Wisdom-Script-AI/Wisdom-Script-AI.ttf') format("truetype");
+     }
+
+ 
+
+  .title__1, .title__2{
+    font-family: 'URWWoodTypeW01-D';
+    font-weight: 900;
+    /* font-style: italic; */
+  font-size: 2.85rem;
+  color:rgb(34, 34, 34);  
+  text-transform: uppercase;
+}
+.title__2{
+  color:rgb(211, 211, 211);
+
+}
+
+ 

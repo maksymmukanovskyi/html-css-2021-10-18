@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo__container">
+            <a href="" class="logo">Golden</a>
+        </div>
+        <ul class="list">
+            <li class="list__item">home</li>
+            <li class="list__item">service</li>
+            <li class="list__item">portfolio</li>
+            <li class="list__item">about</li>
+            <li class="list__item">contact</li>
+        </ul>
+    </header>
+    <main class="content">
+        <section class="section_services">
+        <h1 class="title__1">services</h1>
+        <p class="description__title">Proin iaculis purus consequat sem cure.</p>
+        <ul class="service__list">
+            <li class="card">
+                <div class="subtitle__container">
+                <img class="icon" src="./img/icons/bask.png" alt="/">
+                <h2 class="service">E-Commerce</h2>
+            </div>
+                <p class="description">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+            </li>
+            <li class="card">
+                <div class="subtitle__container">
+                <img class="icon" src="./img/icons/lap.png" alt="/">
+                <h2 class="service">Web Security</h2>
+            </div>
+                <p class="description">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+            </li>
+            <li class="card">
+                <div class="subtitle__container">
+                <img class="icon" src="./img/icons/lock.png" alt="/">
+                <h2 class="service">Responsive Web</h2>
+            </div>
+                <p class="description">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+            </li>
+        </ul>
+    </section>
+    <section class="section__form">
+        <h1 class="title__2">services</h1>
+        <p class="description__title">Proin iaculis purus consequat sem cure.</p>
+        <form action="#" method="get" class="main__form">
+            <div class="person__info">
+            <input type="text" class="first-line" name="user-name" placeholder="your name *" required pattern="^[a-zA-Z\s]*$">
+            <p class="error__email__first">Please enter correct name</p>
+
+            <input type="email" class="second-line" name="email" placeholder="your e-mail *" required>
+            <p class="error__email__second">Please enter a valid e-mail address</p>
+
+            <input type="text" class="third-line" name="subject" placeholder="subject" required pattern="^[a-zA-Z0-9_ ]*$">
+            <p class="error__email__third">Please enter words exluded symbols</p>
+            
+        </div>
+            <textarea name="text"  rows="8" class="text-area" placeholder="your message *" pattern="[^-\s]"></textarea>
+            <p class="error__email__forth">Please type message!</p>
+
+            <input type="submit" class="submit-btn" value="submit" >
+        </form>
+    </section>
+    </main>
+    
+</body>
+</html>

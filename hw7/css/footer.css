@@ -1,0 +1,19 @@
+/* *****************form styles and validation*************************** */
+textarea, input{
+    color:rgb(27, 27, 27);
+    text-transform: uppercase;
+    font-size: 18px;
+  font-family: 'URWWoodTypeW01-D', sans-serif;
+  padding: 2px;
+  }
+
+
+
+input::placeholder, textarea::placeholder{
+    font-family: 'Droid Serif Italic V2', sans-serif;
+    text-transform: lowercase;
+
+    font-weight: 300;
+  color:rgb(88, 88, 88);
+}
+

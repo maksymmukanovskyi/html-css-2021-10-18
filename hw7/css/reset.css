@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 10vh auto;
+    overflow: hidden;
+    background-color: rgb(98, 58, 42);
+    background-image: url(../img/WallpaperDog-11047086.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% 61%;
+
+}
+
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.content{
+    margin: auto;
+    width: 68%;
+}
+
+.title__1, .title__2, .description{
+text-align: center;
+}
