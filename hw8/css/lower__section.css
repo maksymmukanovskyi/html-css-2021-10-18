@@ -1,0 +1,151 @@
+.partner{
+    text-align: center;
+}
+.secondary_title{
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-weight: 700;
+    font-size: 1.375rem;
+    color: #333333;
+    margin-bottom: 1rem;
+}
+.partners_list{
+    display: block;
+    margin-bottom: 1.8125rem;
+}
+.partner_item{
+    position: relative;
+    flex-basis:24%;
+    /*background-color: #00ff27;*/
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    margin-bottom: 1.6875rem;
+}
+.partner_item:last-child{
+    margin-bottom: 0;
+}
+.icon_wrapper{
+    position: relative;
+
+}
+.picture_name{
+    font-size: 0.875rem;
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 1.125rem;
+}
+.picture_description{
+    width: 75%;
+    font-family: 'Roboto Light V1',sans-serif;
+    color: #666666;
+    font-size: 0.875rem;
+}
+
+.picture_icon{
+    font-size: 0;
+    display: block;
+    width: 7.5rem;
+    height: 7.5rem;
+    background-repeat:no-repeat;
+    background-position: right;
+    background-size: contain;
+    margin-bottom: 0.9375rem;
+}
+.first{
+    background-image: url(../img/pics/m-1.png);
+}
+.second {
+    background-image: url(../img/pics/m-2.png);
+}
+.third{
+    background-image: url(../img/pics/w-1.png);
+}
+.forth{
+    background-image: url(../img/pics/w-2.png);
+}
+
+.small_icon_wrapper{
+    border: 2px solid #fff;
+    padding: 9px;
+    border-radius: 50%;
+    /* background-color: #ff4e50; */
+    position: absolute;
+    right: 0;
+    top: 7.5rem;
+    transform: translate(0, -100%);
+    width: 2.375rem;
+    height: 2.375rem;
+}
+.red{
+    background-color: #ff4e50;
+}
+.yellow{
+    background-color: #ffa507;
+}
+.w-blue{
+    background-color: #1cd7ad;
+}
+.d-blue{
+    background-color: #4e73db;
+}
+
+.small_icon{
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-repeat:no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+.ab{
+    background-image: url(../img/icons/shape-1.png);
+}
+.cd{
+    background-image: url(../img/icons/shape-2.png);
+}
+.ef{
+    background-image: url(../img/icons/shape-3.png);
+}
+.gh{
+    background-image: url(../img/icons/shape-4.png);
+}
+.search_more{
+    background-color: transparent;
+    border: 0.0625rem solid #ff4e50;
+    color: #ff4e50;
+    padding: 0.875rem 4.25rem;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-weight: 700;
+    font-size: 0.875rem;
+    border-radius: 1.875rem;
+    max-width:18rem;
+}
+
+
+@media(min-width: 768px) {
+    .partners_list{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    .partner_item{
+        flex-basis: 34%;
+    }
+    .secondary_title{
+        margin-bottom: 2rem;
+    }
+    .search_more{
+        padding: 0.6875rem 1.875rem;
+    }
+}
+
+
+@media(min-width: 1024px){
+    .partner_item{
+        flex-basis: 25%;
+    }
+}

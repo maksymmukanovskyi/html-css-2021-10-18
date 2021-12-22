@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style:none;
+}
+
+.wrapper_with_background{
+    /*background-image: url(../img/pics/bgc.png);*/
+    background-image:linear-gradient(rgba(10, 5, 0, 0.25), rgba(10, 5, 0, 0.25)),url(../img/pics/bgc.png);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover ;
+    padding: 2.3rem 0 8.6875rem;
+}
+.background_blank{
+    padding:4.375rem 0;
+    background-color: #fff;
+}
+
+.container{
+    min-width: 20rem;
+    max-width: 64rem;
+    margin: auto;
+    padding:0 1rem;
+}
+img{
+    display: block;
+    max-width: 100px;
+    height: auto;
+    margin: auto;
+}
+.title{
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.875rem;
+    color: #fff;
+    margin:0 auto 1.1rem;
+}
+

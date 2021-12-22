@@ -1,0 +1,21 @@
+@import'reset.css';
+@import 'upper__section.css';
+@import 'lower__section.css';
+
+/***********fonts***********************/
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../fonts/Montserrat-Bold/Montserrat-Bold/Montserrat-Bold.woff') format('woff'), url('../fonts/Montserrat-Bold/Montserrat-Bold/Montserrat-Bold.woff2') format('woff2'), url('../fonts/Montserrat-Bold/Montserrat-Bold/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 700;
+    /*800*/
+    font-style: normal;
+}
+
+/****************************************************************************/
+@font-face {
+    font-family: 'Roboto Light V1';
+    src: url('../fonts/Roboto Light V1/Roboto Light V1/Roboto Light V1.woff') format('woff'), url('../fonts/Roboto Light V1/Roboto Light V1/Roboto Light V1.woff2') format('woff2'), url('../fonts/Roboto Light V1/Roboto Light V1/Roboto Light V1.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
